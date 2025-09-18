@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion'
-import { SectionWrapper } from '@/components/ui/section-wrapper'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { ContactForm } from '@/components/ui/contact-form'
 import { 
   MapPin, 
   Phone, 
@@ -17,7 +16,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <SectionWrapper>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="text-center max-w-4xl mx-auto"
           >
@@ -29,12 +28,12 @@ export default function ContactPage() {
               Send us a message and we'll respond as soon as possible.
             </p>
           </div>
-        </SectionWrapper>
+        </div>
       </section>
 
       {/* Contact Information & Form */}
       <section className="section-padding">
-        <SectionWrapper>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
@@ -114,123 +113,22 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div
-            >
-              <Card>
-                <h2 className="heading-2 text-white mb-6">Send us a Message</h2>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="firstName" className="block text-white font-medium mb-2">
-                        First Name
-                      </label>
-                      <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                        placeholder="Your first name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-white font-medium mb-2">
-                        Last Name
-                      </label>
-                      <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                        placeholder="Your last name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-white font-medium mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-white font-medium mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                      placeholder="+1 (555) 123-4567"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="service" className="block text-white font-medium mb-2">
-                      Service Interested In
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                    >
-                      <option value="">Select a service</option>
-                      <option value="web-development">Web Development</option>
-                      <option value="mobile-app">Mobile App Development</option>
-                      <option value="cloud-solutions">Cloud Solutions</option>
-                      <option value="database-management">Database Management</option>
-                      <option value="ai-ml">AI & Machine Learning</option>
-                      <option value="data-analytics">Data Analytics</option>
-                      <option value="consulting">Consulting</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-white font-medium mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent resize-none"
-                      placeholder="Tell us about your project..."
-                    ></textarea>
-                  </div>
-
-                  <Button type="submit" className="w-full" size="lg">
-                    <Send className="w-5 h-5 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
-              </Card>
+            <div>
+              <ContactForm />
             </div>
           </div>
-        </SectionWrapper>
+        </div>
       </section>
 
       {/* Map Section */}
       <section className="section-padding bg-gray-800">
-        <SectionWrapper>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
             <h2 className="heading-2 text-white mb-6">Find Us</h2>
             <p className="sub-heading text-gray-300">
               Visit our office in Warangal, Telangana
             </p>
-          </motion.div>
+          </div>
 
           <div
             className="relative w-full h-96 rounded-xl overflow-hidden"
@@ -246,7 +144,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </SectionWrapper>
+        </div>
       </section>
     </div>
   )
