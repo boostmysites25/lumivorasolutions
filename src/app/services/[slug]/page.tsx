@@ -162,13 +162,14 @@ const servicesData = {
 }
 
 interface ServiceDetailsPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function ServiceDetailsPage({ params }: ServiceDetailsPageProps) {
-  const service = servicesData[params.slug as keyof typeof servicesData]
+export default async function ServiceDetailsPage({ params }: ServiceDetailsPageProps) {
+  const { slug } = await params
+  const service = servicesData[slug as keyof typeof servicesData]
 
   if (!service) {
     notFound()

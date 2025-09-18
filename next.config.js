@@ -14,8 +14,7 @@ const nextConfig = {
   // Basic optimizations
   poweredByHeader: false,
   compress: true,
-  swcMinify: true,
   trailingSlash: false,
 }
 
-module.exports = nextConfig
+export default nextConfig

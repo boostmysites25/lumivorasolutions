@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { SectionWrapper } from '@/components/ui/section-wrapper'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -219,7 +220,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="section-padding bg-gray-800">
         <SectionWrapper>
-          <div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -230,7 +231,7 @@ export default function ContactPage() {
             <p className="sub-heading text-gray-300">
               Visit our office in Warangal, Telangana
             </p>
-          </div>
+          </motion.div>
 
           <div
             className="relative w-full h-96 rounded-xl overflow-hidden"
