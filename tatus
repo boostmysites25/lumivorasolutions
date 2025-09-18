@@ -1,0 +1,119 @@
+[33mcommit 7a20f1fc098fc9465e5c2ae48ed06056bb7e76d4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pranav <mpranavprem@gmail.com>
+Date:   Wed Jan 1 17:24:20 2025 +0530
+
+    changes
+
+.gitignore
+README.md
+package-lock.json
+package.json
+public/.htaccess
+public/index.html
+public/logo.png
+public/manifest.json
+public/robots.txt
+src/App.js
+src/App.test.js
+src/assets/images/Vector(1).png
+src/assets/images/Vector(2).png
+src/assets/images/Vector.png
+src/assets/images/aboutus-img1.webp
+src/assets/images/aboutus-img2.webp
+src/assets/images/aboutus-img3.webp
+src/assets/images/app_projects/1.webp
+src/assets/images/app_projects/2.webp
+src/assets/images/app_projects/3.webp
+src/assets/images/app_projects/4.webp
+src/assets/images/banner.webp
+src/assets/images/bg-img.webp
+src/assets/images/client-logos/1.png
+src/assets/images/client-logos/2.png
+src/assets/images/client-logos/3.png
+src/assets/images/client-logos/4.png
+src/assets/images/client-logos/5.png
+src/assets/images/client-logos/6.png
+src/assets/images/client-logos/7.png
+src/assets/images/home-about-img.jpeg
+src/assets/images/home-about-img.webp
+src/assets/images/icons/ai.png
+src/assets/images/icons/android-development.png
+src/assets/images/icons/appdev.png
+src/assets/images/icons/chatbot.png
+src/assets/images/icons/cloud.png
+src/assets/images/icons/dataanalytics.png
+src/assets/images/icons/datascience.png
+src/assets/images/icons/flutter-development.png
+src/assets/images/icons/hybrid-app-development.png
+src/assets/images/icons/innovation&excellence.png
+src/assets/images/icons/integrity&transparency.png
+src/assets/images/icons/ios-development.png
+src/assets/images/icons/itconsulting.png
+src/assets/images/icons/landing-page.png
+src/assets/images/icons/nlp.png
+src/assets/images/icons/online-shopping.png
+src/assets/images/icons/socialmedia.png
+src/assets/images/icons/software-development.png
+src/assets/images/icons/webdev.png
+src/assets/images/landingpage/app-dev-about.webp
+src/assets/images/landingpage/landing-contactus.webp
+src/assets/images/landingpage/web-dev-about.webp
+src/assets/images/portfolio/1.jpeg
+src/assets/images/portfolio/2.jpeg
+src/assets/images/portfolio/3.png
+src/assets/images/portfolio/4.jpg
+src/assets/images/team1.jpeg
+src/assets/images/team2.jpeg
+src/assets/images/team3.jpeg
+src/assets/images/testimonial1.png
+src/assets/images/testimonial2.png
+src/assets/images/testimonial3.png
+src/assets/images/web_projects/1.webp
+src/assets/images/web_projects/2.webp
+src/assets/images/web_projects/3.webp
+src/assets/images/web_projects/4.webp
+src/assets/images/web_projects/5.webp
+src/assets/images/web_projects/6.webp
+src/assets/logo/logo.png
+src/assets/svgs/Affordable & Time Efficient.svg
+src/assets/svgs/Client-Centric Approach.svg
+src/assets/svgs/Commitment to Quality.svg
+src/assets/svgs/Dedicated Support.svg
+src/assets/svgs/End-to-End Solutions.svg
+src/assets/svgs/Innovative Problem Solvers.svg
+src/assets/svgs/Proven Expertise.svg
+src/assets/svgs/Transparent and Reliable.svg
+src/assets/svgs/WhatsappIcon.svg
+src/components/ConnectWithUs.jsx
+src/components/JoinHappyCustomers.jsx
+src/components/LeadForm.jsx
+src/components/LoadingSpinner.jsx
+src/components/Portfolio.jsx
+src/components/ScrollToTop.js
+src/components/SpinnerContext.js
+src/components/SubHeading.jsx
+src/components/Testimonials.jsx
+src/components/TrustWorthySection.jsx
+src/components/WhatsAppIcon.jsx
+src/components/WhyChooseUs.jsx
+src/components/landingPages/ContactForm.jsx
+src/components/landingPages/LandingFooter.jsx
+src/components/landingPages/LandingHeader.jsx
+src/components/website/AllServices.jsx
+src/components/website/MapComponent.jsx
+src/components/website/OurValue.jsx
+src/components/website/PageBanner.jsx
+src/components/website/WebsiteFooter.jsx
+src/components/website/WebsiteHeader.jsx
+src/constant.js
+src/index.css
+src/index.js
+src/pages/AboutUs.jsx
+src/pages/ContactUs.jsx
+src/pages/Home.jsx
+src/pages/LandingPage.jsx
+src/pages/Services.jsx
+src/pages/ThankYou.jsx
+src/reportWebVitals.js
+src/setupTests.js
+tailwind.config.js
