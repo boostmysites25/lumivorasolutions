@@ -15,6 +15,9 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   trailingSlash: false,
+  // Output configuration
+  output: 'standalone',
+  distDir: 'dist',
 }
 
 export default nextConfig

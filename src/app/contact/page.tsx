@@ -37,8 +37,7 @@ export default function ContactPage() {
         <SectionWrapper>
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div
-            >
+            <div>
               <h2 className="heading-2 text-white mb-8">Contact Information</h2>
               
               <div className="space-y-6 mb-8">

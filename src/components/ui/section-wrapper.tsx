@@ -25,22 +25,24 @@ const sectionWrapperVariants = cva(
 )
 
 export interface SectionWrapperProps
-  extends React.HTMLAttributes<HTMLElement>,
-    VariantProps<typeof sectionWrapperVariants> {
-  as?: keyof JSX.IntrinsicElements
+  extends VariantProps<typeof sectionWrapperVariants> {
+  as?: React.ElementType
+  className?: string
+  children?: React.ReactNode
 }
 
-const SectionWrapper = React.forwardRef<HTMLElement, SectionWrapperProps>(
-  ({ className, background, padding, as: Component = "section", ...props }, ref) => {
-    return (
-      <Component
-        ref={ref}
-        className={cn(sectionWrapperVariants({ background, padding, className }))}
-        {...props}
-      />
-    )
-  }
-)
+const SectionWrapper = React.forwardRef<
+  HTMLElement,
+  SectionWrapperProps & React.HTMLAttributes<HTMLElement>
+>(({ className, background, padding, as: Component = "section", ...props }, ref) => {
+  return (
+    <Component
+      ref={ref}
+      className={cn(sectionWrapperVariants({ background, padding, className }))}
+      {...props}
+    />
+  )
+})
 SectionWrapper.displayName = "SectionWrapper"
 
 export { SectionWrapper, sectionWrapperVariants }
